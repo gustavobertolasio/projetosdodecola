@@ -1,0 +1,104 @@
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.brand {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    height: 80%;
+    width: 15vw;
+}
+
+.navbar {
+    background-color: whitesmoke;
+    width: 90vw;
+    height: 10vh;
+    border-bottom: 1px solid tomato;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.menu>.menu-item {
+    border-right: 1px solid lightgray;
+    justify-content: center;
+}
+
+.menu-item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    height: 100%;
+    width: 100%;
+    color: darkgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 5%;
+}
+
+a:visited {
+    color: darkgray;
+}
+
+.menu-item:hover {
+    background-color: darkgray;
+}
+
+.menu-item:hover>a {
+    color: white;
+}
+
+.sub-control:hover>.submenu {
+    display: flex;
+    flex-direction: column;
+    animation-name: fadeInDown;
+    animation-duration: 0.5s;
+}
+
+.submenu {
+    margin-top: 11vh;
+    display: none;
+    position: absolute;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.submenu li {
+    width: 15vw;
+    background-color: whitesmoke;
+}
+
+.submenu li:hover {
+    background-color: darkgrey;
+}
+
+ul {
+    list-style-type: none;
+}
